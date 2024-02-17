@@ -1,0 +1,121 @@
+@media (max-width: 1100px) {
+	main > section:nth-of-type(1) > div > aside {
+		width: 100%;
+		margin-top: 150px;
+	}
+	main > section:nth-of-type(1) > div > div {
+		display: none;
+	}
+	main > section:nth-of-type(4) > nav {
+		height: auto;
+	}
+	main > section:nth-of-type(4) > nav > span {
+		/* line-height: normal; */
+		/* height: 32px; */
+		/* padding-top: 0; */
+		/* padding-bottom: 0; */
+		/* line-height: 32px; */
+	}
+
+	main > section:nth-of-type(5) {
+		/* height: auto; */
+	}
+	main > section:nth-of-type(5) {
+		padding: 30px 0;
+	}
+	main > section:nth-of-type(5) > div {
+		display: block;
+	}
+	main > section:nth-of-type(5) > div:nth-of-type(1) {
+		margin-bottom: 20px;
+		width: 70%;
+	}
+}
+@media (max-width: 600px) {
+	header > nav {
+		margin-top: 15px;
+	}
+	header > nav > div {
+		display: block;
+	}
+	header > nav > ul {
+		display: none;
+	}
+	main > section:nth-of-type(1) {
+		/* flex-direction: column; */
+	}
+	main > section:nth-of-type(1) > div > aside > div {
+		font-size: 1.8rem;
+	}
+
+	main > section:nth-of-type(1) > div > div {
+		display: none;
+	}
+
+	main > section:nth-of-type(2) > article {
+		width: 100%;
+	}
+	main > section:nth-of-type(3) {
+		padding: 0;
+	}
+	main > section:nth-of-type(3) > div:nth-child(1) > h1 {
+		font-size: 2.5rem;
+	}
+	main > section:nth-of-type(3) > div:nth-of-type(1) > h1,
+	main > section:nth-of-type(3) > div:nth-of-type(1) > div {
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+	main > section:nth-of-type(3) > div:nth-of-type(1) > div {
+		margin-bottom: 10px;
+	}
+	main > section:nth-of-type(3) > div:nth-of-type(2) > ul > li {
+		height: fit-content;
+		padding: 5px 15px;
+		font-size: 1rem;
+		line-height: 22px;
+		margin-right: 5px;
+		margin-bottom: 5px;
+	}
+	main > section:nth-of-type(3) > div:nth-of-type(2) > ul > li > div {
+		font-size: 1.5rem;
+	}
+	main > section:nth-of-type(4) > nav {
+		width: 80%;
+	}
+	main > section:nth-of-type(4) > nav > span {
+		/* font-size: 5%; */
+		font-size: 3vw;
+	}
+	main > section:nth-of-type(4) > nav > div {
+		/* display: none; */
+	}
+	main > section:nth-of-type(4) > div > ul > li {
+		width: calc(50% - 13.33px);
+	}
+	main > section:nth-of-type(4) > div > ul > li:nth-child(2n) {
+		margin-right: 0;
+	}
+	main > section:nth-of-type(4) > div > ul > li:nth-child(-n + 2) {
+		margin-top: 0;
+	}
+	main > section:nth-of-type(5) > div {
+		width: 100%;
+	}
+	main > section:nth-of-type(5) > div:nth-of-type(2) {
+		width: 80%;
+	}
+}
+@media (max-width: 500px) {
+	* {
+		/* font-size: 2vw; */
+	}
+	main > section:nth-of-type(4) > nav > span {
+		/* overflow: hidden; */
+		font-size: 10px;
+	}
+	main > section:nth-of-type(3) > div:nth-child(1) > h1 {
+		font-size: 2rem;
+	}
+}
