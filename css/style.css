@@ -6,12 +6,13 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	font-family: Arial, Helvetica, sans-serif;
 }
 a {
 	color: inherit;
 	text-decoration: none;
 }
-h1 {
+h2 {
 	font-family: ProtestStrike-Regular, sans-serif;
 }
 header {
@@ -24,6 +25,11 @@ header {
 	background-color: #fff;
 	z-index: 99;
 	box-shadow: 0px 2px 5px rgb(176, 176, 176);
+}
+header::after {
+	content: '';
+	display: block;
+	clear: both;
 }
 header > a {
 	/*logo*/
@@ -77,6 +83,7 @@ main > section:nth-of-type(1) {
 main > section:nth-of-type(1) > div {
 	height: 70vh;
 	padding-top: 10vh;
+	overflow: hidden;
 }
 main > section:nth-of-type(1) > div > aside {
 	width: 49.6%;
@@ -84,17 +91,17 @@ main > section:nth-of-type(1) > div > aside {
 	vertical-align: middle;
 }
 main > section:nth-of-type(1) > div > aside > div,
-main > section:nth-of-type(1) > div > aside > h1 {
+main > section:nth-of-type(1) > div > aside > h2 {
 	text-align: center;
 	font-size: 2.5rem;
 	line-height: 56px;
 }
-main > section:nth-of-type(1) > div > aside > h1 {
+main > section:nth-of-type(1) > div > aside > h2 {
 	font-size: 3rem;
 	margin-bottom: 40px;
 }
 main > section:nth-of-type(1) > div > div {
-	width: 50%;
+	width: 45%;
 	/* height: inherit; */
 	text-align: center;
 	display: inline-block;
@@ -142,7 +149,7 @@ main > section:nth-of-type(2) > div {
 	overflow: hidden;
 	/* height: 100vh; */
 }
-main > section:nth-of-type(2) > div > h1 {
+main > section:nth-of-type(2) > div > h2 {
 	text-align: center;
 	margin-bottom: 20px;
 	font-size: 3rem;
@@ -169,7 +176,7 @@ main > section:nth-of-type(3) > div:nth-of-type(1) {
 	width: 70%;
 	margin: 0 auto;
 }
-main > section:nth-of-type(3) > div:nth-of-type(1) > h1 {
+main > section:nth-of-type(3) > div:nth-of-type(1) > h2 {
 	font-size: 2.5rem;
 	font-weight: 500;
 	display: inline-block;
@@ -240,16 +247,17 @@ main > section:nth-of-type(3) > div:nth-of-type(2) > ul > li > div {
 	border-radius: 15px;
 	font-size: 2.5vw;
 }
-main > section:nth-of-type(3) > div:nth-of-type(2) > ul > li > div::after {
+/* no absolute... */
+/* main > section:nth-of-type(3) > div:nth-of-type(2) > ul > li > div::after {
 	content: '';
 	position: absolute;
-	top: 100%; /* place at bottom of the modal. */
-	left: 50%; /* place at middle of the modal. */
-	margin-left: -10px; /* move to center according to the width of the arrow */
+	top: 100%;
+	left: 50%; 
+	margin-left: -10px;
 	border-width: 10px;
 	border-style: solid;
-	border-color: #646464 transparent transparent transparent; /* set arrow color */
-}
+	border-color: #646464 transparent transparent transparent; 
+} */
 main > section:nth-of-type(3) > div:nth-of-type(2) > ul > li:hover {
 	cursor: pointer;
 }
@@ -262,7 +270,7 @@ main > section:nth-of-type(4) {
 	background-image: url('/img/white_paint2.jpg');
 	background-size: cover;
 }
-main > section:nth-of-type(4) > h1 {
+main > section:nth-of-type(4) > h2 {
 	text-align: center;
 	margin-bottom: 20px;
 	font-size: 3rem;
@@ -311,7 +319,7 @@ main > section:nth-of-type(4) > nav > span:hover {
 }
 main > section:nth-of-type(4) > div > ul {
 	display: none;
-	max-height: 70vh;
+	max-height: 65vh;
 	overflow: scroll;
 	box-shadow: inset 5px 3px 10px 5px rgb(77, 71, 71);
 	padding: 16px;
@@ -351,7 +359,7 @@ main > section:nth-of-type(4) > div > ul > li > div:nth-of-type(1) {
 }
 main > section:nth-of-type(4) > div > ul > li > div:nth-of-type(1) > img {
 	width: 100%;
-	height: 230px;
+	/* height: 230px; */
 	background-color: white;
 	border-radius: 20px 20px 0 0;
 }
@@ -398,6 +406,7 @@ main > section:nth-of-type(5) > div:nth-of-type(1) {
 	border-radius: 20px;
 	padding: 20px;
 	letter-spacing: normal;
+	font-size: x-large;
 }
 main > section:nth-of-type(5) > div:nth-of-type(2) {
 	width: 500px;
