@@ -1,9 +1,25 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+	handleMobileMenu();
 	handleScrollEvent();
 	generateServiceList();
 	handleSearchInputChange();
 	handleTabMenu();
 });
+function handleMobileMenu() {
+	const ul = document.querySelector('header  > ul');
+
+	document
+		.querySelector('header > div  > nav > div > img')
+		.addEventListener('click', () => {
+			if (!ul.style.height || ul.style.height === '0px') {
+				ul.style.height = 'fit-content';
+				ul.style.border = '1px solid #646464';
+			} else {
+				ul.style.height = '0px';
+				ul.style.border = 'none';
+			}
+		});
+}
 function handleTabMenu() {
 	const glassesUl = document.getElementById('glasses');
 	const sunglassesUl = document.getElementById('sunglasses');
